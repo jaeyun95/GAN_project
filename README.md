@@ -1,5 +1,5 @@
-# 3차 과제 "GAN project" github 페이지 입니다.
-
+## 3차 과제 "GAN project" github 페이지 입니다.   
+### 조교 이메일 : wodbs95@gmail.com   
 - - -
 ## 과제 개요   
 * 과제 주제 : 적대적 신경망(GAN)으로 Fashion MNIST 영상 분류 및 생성하기   
