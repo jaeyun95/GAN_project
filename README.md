@@ -38,7 +38,7 @@
 ### Index   
 1. [No such file or directory](#error1)   
 
-#### error1   
+1. #### error1   
 * 에러 내용
 ```
 FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epoch_5000.png'
