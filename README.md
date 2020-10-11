@@ -39,9 +39,9 @@
 1. [No such file or directory](#error1)   
 
 #### error1   
-##### 에러 내용
+* 에러 내용
 ```
 FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epoch_5000.png'
 ```
-##### 에러 원인 : 해당 폴더가 존재하지 않아서 나는 에러   
-##### 해결 : 해당 위치에 폴더 생성   
+* 에러 원인 : 해당 폴더가 존재하지 않아서 나는 에러   
+* 해결 : 해당 위치에 폴더 생성   
