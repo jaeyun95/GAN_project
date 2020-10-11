@@ -11,14 +11,14 @@
 - - -
 ## 수행 작업 설명
 ### 1.cGAN(Conditional GAN) 구현   
-![IMAGE2](/ignore/cgan.jpg)
+![IMAGE2](/ignore/cgan.JPG)
 * cGAN이란?   
   * 생성자가 랜덤하게 이미지를 생성하는 것이 아닌, 원하는 이미지를 생성할 수 있는 모델
   * 생성자, 판별자의 입력으로 noise외에 label을 함께 넣어줌
   * [참고 사이트](https://rm-7.tistory.com/2)   
   
 ### 2.DCGAN(Deep Convolutional GAN) 구현   
-![IMAGE2](/ignore/dcgan.jpg)
+![IMAGE2](/ignore/dcgan.JPG)
 * DCGAN이란?   
   * Convolutional 구조를 사용한 GAN 모델
   * [참고 사이트](http://jaejunyoo.blogspot.com/2017/02/deep-convolutional-gan-dcgan-1.html)   
