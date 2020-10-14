@@ -11,17 +11,35 @@
 - - -
 ## 수행 작업 설명
 ### 1.cGAN(Conditional GAN) 구현   
-![IMAGE2](/ignore/cgan.JPG)
+![IMAGE2](/ignore/cgan.JPG)   
+* 작업 내용   
+  * 베이스 모델을 cGAN으로 변경(cgan.py)   
+  * cgan.py파일 내의 (1)~(12)의 코드 작성   
 * cGAN이란?   
   * 생성자가 랜덤하게 이미지를 생성하는 것이 아닌, 원하는 이미지를 생성할 수 있는 모델
   * 생성자, 판별자의 입력으로 noise외에 label을 함께 넣어줌
   * [참고 사이트](https://rm-7.tistory.com/2)   
+* 결과물   
+  * 베이스 모델(gan.py), 구현한 모델(cgan.py)의 생성된 이미지, loss를 비교   
+  * epoch은 5000으로 비교   
   
 ### 2.DCGAN(Deep Convolutional GAN) 구현   
-![IMAGE2](/ignore/dcgan.JPG)
+![IMAGE2](/ignore/dcgan.JPG)   
+* 작업 내용   
+  * 베이스 모델을 DCGAN으로 변경(dcgan.py)   
+  * dcgam.py파일 내의 (1),(2)의 코드 작성   
+  * generator   
+    * input size : [100]   
+	* output size : [28,28,1]   
+  * discriminator   
+    * input size : [28,28,1]   
+	* output size : [1]   
 * DCGAN이란?   
   * Convolutional 구조를 사용한 GAN 모델
   * [참고 사이트](http://jaejunyoo.blogspot.com/2017/02/deep-convolutional-gan-dcgan-1.html)   
+* 결과물   
+  * 베이스 모델(gan.py), 구현한 모델(dcgan.py)의 생성된 이미지, loss를 비교   
+  * epoch은 5000으로 비교   
 - - -
 ## 제출 결과물   
 1.과제 보고서   
