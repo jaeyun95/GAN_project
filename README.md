@@ -87,7 +87,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epo
 * 에러 내용 : "데이터 다운로드 시간이 너무 오래걸려요!"   
 (1)[여기](http://mjgim.me/2018/08/30/fashion_mnist.html)를 클릭하여 데이터를 직접 다운받아주세요.   
 ![IMAGE3](/ignore/error2.png)   
-(2)[여기](https://appia.tistory.com/164)를 참고하여 pandas를 설치해 주세요.
+(2)[여기](https://appia.tistory.com/164)를 참고하여 pandas를 설치해 주세요.   
 (3)데이터 로드 부분의 코드를 아래와 같이 변경해 주세요.   
 ```
 #변경전(train함수 안에 있는 코드입니다.)
