@@ -59,11 +59,11 @@ conda install numpy matplotlib
 * dcgan.py : deep convolutional GAN(작업2 관련 파일)
   * GAN,CGAN,DCGAN() : 각 모델 클래스
     * train() : 모델 학습
-	* build_generator() : 생성자 모델 정의
-	* build_discriminator() : 판별자 모델 정의
-	* plotLoss() : 손실 그래프 생성(loss_graph 폴더 안에 자동 생성)
-	* sample_images() : 결과 이미지 생성(images폴더 안에 자동 생성)
-	* save/load model() : 학습된 모델 저장 및 불러오기(saved_model 폴더 안에 자동 생성)
+    * build_generator() : 생성자 모델 정의
+    * build_discriminator() : 판별자 모델 정의
+    * plotLoss() : 손실 그래프 생성(loss_graph 폴더 안에 자동 생성)
+    * sample_images() : 결과 이미지 생성(images폴더 안에 자동 생성)
+    * save/load model() : 학습된 모델 저장 및 불러오기(saved_model 폴더 안에 자동 생성)
 ```
 <span style="color:red">※ 주의사항 ※</span>   
 <span style="color:red">작업1 : 표기 해둔 (1)~(12)외에 수정 금지(모델은 MLP기반 그대로 유지)</span>   
