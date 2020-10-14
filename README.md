@@ -72,10 +72,10 @@ conda install numpy matplotlib
 - - -
 ## ISSUE(질문이 들어오면 계속 업데이트합니다.)   
 ### Index   
-1. #### [No such file or directory](#error1)   
-2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#error2)
+1. #### [No such file or directory](#1.error1)   
+2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#2.error2)
 
-#### 1. error1   
+#### 1.error1   
 * 에러 내용 : "No such file or directory"   
 ```
 FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epoch_5000.png'
@@ -83,11 +83,13 @@ FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epo
 * 에러 원인 : 해당 폴더가 존재하지 않아서 나는 에러(images 혹은 saved_model폴더가 없을 경우 같은 에러가 날 수 있습니다.)   
 * 해결 : 해당 위치에 폴더 생성   
 
-#### 2. error2   
+#### 2.error2   
 * 에러 내용 : "데이터 다운로드 시간이 너무 오래걸려요!"   
 (1)[여기](http://mjgim.me/2018/08/30/fashion_mnist.html)를 클릭하여 데이터를 직접 다운받아주세요.   
 ![IMAGE3](/ignore/error2.png)   
+
 (2)[여기](https://appia.tistory.com/164)를 참고하여 pandas를 설치해 주세요.   
+
 (3)데이터 로드 부분의 코드를 아래와 같이 변경해 주세요.   
 ```
 #변경전(train함수 안에 있는 코드입니다.)
