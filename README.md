@@ -1,5 +1,5 @@
 ## 3차 과제 "GAN project" github 페이지 입니다.   
-### 조교 이메일 : wodbs95@gmail.com   
+### 조교 이메일 : wodbs9522@gmail.com   
 ### 목차
 #### * [과제 개요](#과제-개요)   
 #### * [수행 작업 설명](#수행-작업-설명)   
@@ -121,7 +121,7 @@ code
 <span style="color:red">다른 딥러닝 프레임워크 사용 금지</span>   
 
 - - -
-## 에러 목록
+## 에러 목록   
 ### Index   
 1. #### [No such file or directory](#error1)   
 2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#error2)   
