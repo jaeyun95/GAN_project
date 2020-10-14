@@ -121,7 +121,7 @@ code
 <span style="color:red">다른 딥러닝 프레임워크 사용 금지</span>   
 
 - - -
-## 에러 목록(질문이 들어오면 계속 업데이트합니다.)   
+## 에러 목록
 ### Index   
 1. #### [No such file or directory](#error1)   
 2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#error2)   
