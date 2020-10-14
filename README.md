@@ -137,6 +137,11 @@ FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epo
 
 (3)데이터 로드 부분의 코드를 아래와 같이 변경해 주세요.   
 ```
+## pandas import
+# 맨 위에 pandas를 import홰주세요.
+import pandas as pd
+
+##코드 변경
 #변경전(train함수 안에 있는 코드입니다.)
 (X_train, _), (_, _) = fashion_mnist.load_data() 혹은 (X_train, y_train), (_, _) = fashion_mnist.load_data()
 
