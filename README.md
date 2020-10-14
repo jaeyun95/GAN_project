@@ -122,7 +122,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epo
 train_data = pd.read_csv("data/fashion-mnist_train.csv") #경로는 본인이 데이터 파일을 넣어둔 곳으로 잡아주셔야 합니다.
 y_train = np.array(train_data["label"][:])
 del train_data["label"]
-X_train = np.array(train_data[:data_number])
+X_train = np.array(train_data[:])
 ```   
 
 ### error3   
