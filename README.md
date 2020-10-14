@@ -74,8 +74,10 @@ conda install numpy matplotlib
 ### Index   
 1. #### [No such file or directory](#error1)   
 2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#error2)
+3. #### [Pycharm으로 실행이 안돼요!](#error3)
 
-#### error1   
+
+### error1   
 * 에러 내용 : "No such file or directory"   
 ```
 FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epoch_5000.png'
@@ -83,7 +85,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epo
 * 에러 원인 : 해당 폴더가 존재하지 않아서 나는 에러(images 혹은 saved_model폴더가 없을 경우 같은 에러가 날 수 있습니다.)   
 * 해결 : 해당 위치에 폴더 생성   
 
-#### error2   
+### error2   
 * 에러 내용 : "데이터 다운로드 시간이 너무 오래걸려요!"   
 (1)[여기](http://mjgim.me/2018/08/30/fashion_mnist.html)를 클릭하여 데이터를 직접 다운받아주세요.   
 ![IMAGE3](/ignore/error2.png)   
@@ -100,4 +102,22 @@ train_data = pd.read_csv("data/fashion-mnist_train.csv")
 y_train = np.array(train_data["label"][:])
 del train_data["label"]
 X_train = np.array(train_data[:data_number])
+```   
+
+### error3   
+* 에러 내용 : "Pycharm으로 실행이 안돼요!"   
+(1)Anaconda Prompt를 실행하여, 본인이 만든 환경으로 접속해 주세요.   
 ```
+conda activate 환경이름
+```   
+![IMAGE4](/ignore/conda1.JPG)   
+(2)코드가 있는 폴더로 이동해 주세요.   
+```
+cd 폴더 경로
+```   
+![IMAGE5](/ignore/conda2.JPG)   
+(3)파일을 실행해 주세요.   
+```
+python 파일이름.py
+```   
+![IMAGE6](/ignore/conda3.JPG)   
