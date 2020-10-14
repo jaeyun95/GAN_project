@@ -11,26 +11,20 @@
 - - -
 ## 수행 작업 설명
 ### 1.cGAN(Conditional GAN) 구현   
-<<<<<<< HEAD
-![IMAGE2](/ignore/cgan.JPG)
-=======
 ![IMAGE2](/ignore/cgan.JPG)   
 * 작업 내용   
   * 베이스 모델을 cGAN으로 변경(cgan.py)   
   * cgan.py파일 내의 (1)~(12)의 코드 작성   
->>>>>>> 8bad80b6dcd68e4d095a9cf0b5c7c6f62f28930c
 * cGAN이란?   
   * 생성자가 랜덤하게 이미지를 생성하는 것이 아닌, 원하는 이미지를 생성할 수 있는 모델
   * 생성자, 판별자의 입력으로 noise외에 label을 함께 넣어줌
   * [참고 사이트](https://rm-7.tistory.com/2)   
-<<<<<<< HEAD
   
 ### 2.DCGAN(Deep Convolutional GAN) 구현   
-![IMAGE2](/ignore/dcgan.JPG)
+![IMAGE2](/ignore/dcgan.JPG)   
 * DCGAN이란?   
   * Convolutional 구조를 사용한 GAN 모델
   * [참고 사이트](http://jaejunyoo.blogspot.com/2017/02/deep-convolutional-gan-dcgan-1.html)   
-=======
 * 결과물   
   * 베이스 모델(gan.py), 구현한 모델(cgan.py)의 생성된 이미지, loss를 비교   
   * epoch은 5000으로 비교   
@@ -55,7 +49,6 @@
   
 #### 코드 작성시 필요하시면, [케라스 문서](https://www.tensorflow.org/api_docs/python/tf/keras)에서 검색하여 사용하세요.   
 
->>>>>>> 8bad80b6dcd68e4d095a9cf0b5c7c6f62f28930c
 - - -
 ## 제출 결과물   
 1.과제 보고서   
@@ -67,8 +60,7 @@
 3.작업2의 학습된 모델(model.h5)   
 - - -
 ## 환경 세팅   
-<<<<<<< HEAD
-=======
+
 1.window(No Anaconda)
 ```
 python –m pip install numpy matplotlib   
@@ -125,24 +117,13 @@ code
 <span style="color:red">작업1 : 표기 해둔 (1)~(12)외에 수정 금지(모델은 MLP기반 그대로 유지)</span>   
 <span style="color:red">작업2 : build_generator(), build_discriminator() 외에 수정 금지</span>   
 <span style="color:red">다른 딥러닝 프레임워크 사용 금지</span>   
->>>>>>> 8bad80b6dcd68e4d095a9cf0b5c7c6f62f28930c
+
 - - -
 ## ISSUE(질문이 들어오면 계속 업데이트합니다.)   
 ### Index   
 1. #### [No such file or directory](#error1)   
-<<<<<<< HEAD
-
-#### 1.error1   
-* 에러 내용
-```
-FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epoch_5000.png'
-```
-* 에러 원인 : 해당 폴더가 존재하지 않아서 나는 에러   
-* 해결 : 해당 위치에 폴더 생성   
-=======
-2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#error2)
-3. #### [Pycharm으로 실행이 안돼요!](#error3)
-
+2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#error2)   
+3. #### [Pycharm으로 실행이 안돼요!](#error3)   
 
 ### error1   
 * 에러 내용 : "No such file or directory"   
@@ -190,4 +171,3 @@ cd 폴더 경로
 python 파일이름.py
 ```   
 ![IMAGE6](/ignore/conda3.JPG)   
->>>>>>> 8bad80b6dcd68e4d095a9cf0b5c7c6f62f28930c
