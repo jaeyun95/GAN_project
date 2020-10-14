@@ -40,6 +40,9 @@
 * 결과물   
   * 베이스 모델(gan.py), 구현한 모델(dcgan.py)의 생성된 이미지, loss를 비교   
   * epoch은 5000으로 비교   
+  
+#### 코드 작성시 필요하시면, [케라스 문서](https://www.tensorflow.org/api_docs/python/tf/keras)에서 검색하여 사용하세요.   
+
 - - -
 ## 제출 결과물   
 1.과제 보고서   
