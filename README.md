@@ -108,6 +108,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epo
 
 ### error2   
 * 에러 내용 : "데이터 다운로드 시간이 너무 오래걸려요!"   
+
 (1)[여기](http://mjgim.me/2018/08/30/fashion_mnist.html)를 클릭하여 데이터를 직접 다운받아주세요.   
 ![IMAGE3](/ignore/error2.png)   
 
@@ -127,6 +128,7 @@ X_train = np.array(train_data[:])
 
 ### error3   
 * 에러 내용 : "Pycharm으로 실행이 안돼요!"   
+
 (1)Anaconda Prompt를 실행하여, 본인이 만든 환경으로 접속해 주세요.   
 ```
 conda activate 환경이름
