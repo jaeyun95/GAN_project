@@ -93,19 +93,19 @@ conda install numpy matplotlib
 code
   ㄴcGAN
     ㄴimages
-	ㄴloss_graph
-	ㄴsaved_model
-	ㄴcgan.py
+    ㄴloss_graph
+    ㄴsaved_model
+    ㄴcgan.py
   ㄴDCGAN
     ㄴimages
-	ㄴloss_graph
-	ㄴsaved_model
-	ㄴdcgan.py
+    ㄴloss_graph
+    ㄴsaved_model
+    ㄴdcgan.py
   ㄴGAN
     ㄴimages
-	ㄴsaved_model
-	ㄴsaved_model
-	ㄴgan.py
+    ㄴsaved_model
+    ㄴsaved_model
+    ㄴgan.py
 ```   
 
 ## 기본코드 설명   
