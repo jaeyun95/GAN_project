@@ -117,7 +117,7 @@ code
 ```
 <span style="color:red">※ 주의사항 ※</span>   
 <span style="color:red">작업1 : 표기 해둔 (1)~(12)외에 수정 금지(모델은 MLP기반 그대로 유지)</span>   
-<span style="color:red">작업2 : build_generator(), build_discriminator() 외에 수정 금지</span>   
+<span style="color:red">작업2 : 표기 해둔 (1),(2)(build_generator(), build_discriminator()) 외에 수정 금지</span>   
 <span style="color:red">다른 딥러닝 프레임워크 사용 금지</span>   
 
 - - -
