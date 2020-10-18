@@ -133,7 +133,7 @@ code
 FileNotFoundError: [Errno 2] No such file or directory: 'loss_graph/gan_loss_epoch_5000.png'
 ```
 * 에러 원인 : 해당 폴더가 존재하지 않아서 나는 에러(images 혹은 saved_model폴더가 없을 경우 같은 에러가 날 수 있습니다.)   
-* 해결 : 해당 위치에 폴더 생성   
+* 해결 : 해당 위치에 폴더 생성([폴더 구조](#폴더-구조)를 참고해주세요.)   
 
 ### error2   
 * 에러 내용 : "데이터 다운로드 시간이 너무 오래걸려요!"   
