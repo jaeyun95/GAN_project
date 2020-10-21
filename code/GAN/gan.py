@@ -38,7 +38,7 @@ class GAN():
         # 최종 모델(결합된 모델)의 경우 생성자만 학습
         self.discriminator.trainable = False
 
-        # 판별자는 생성된 이미지를 입력으로 받아, 유효성을 검사
+        # 판별자는 생성된 이미지를 입력으로 받음/validity는 예측값
         validity = self.discriminator(img)
 
         # 최종 모델(결합된 모델)은 생성자와 판별자를 쌓아서 만든 모델임(GAN)
@@ -90,8 +90,7 @@ class GAN():
         X_train = np.expand_dims(X_train, axis=3)
 
         # Adversarial ground truths
-        valid = np.ones((batch_size, 1))
-        fake = np.zeros((batch_size, 1))
+
         D_loss_list = []
         G_loss_list = []
         for epoch in range(1,epochs+1):
@@ -111,9 +110,10 @@ class GAN():
             gen_imgs = self.generator.predict(noise)
 
             # 판별자 학습
-            d_loss_real = self.discriminator.train_on_batch(imgs, valid)
-            d_loss_fake = self.discriminator.train_on_batch(gen_imgs, fake)
-            d_loss = 0.5 * np.add(d_loss_real, d_loss_fake)
+            X_fake_and_real = tf.concat([gen_imgs, imgs], axis=0)
+            fake_and_valid_label = tf.constant([[0.]] * batch_size + [[1.]] * batch_size)
+            self.discriminator.tainable = True
+            d_loss = self.discriminator.train_on_batch(X_fake_and_real, fake_and_valid_label)
 
             # ---------------------
             #  생성자 학습
@@ -123,7 +123,9 @@ class GAN():
             noise = np.random.normal(0, 1, (batch_size, self.latent_dim))
 
             # 판별자 레이블 샘플을 유효한 것으로 지정
-            g_loss = self.model.train_on_batch(noise, valid)
+            valid_label = tf.constant([[1.]] * batch_size)
+            self.discriminator.tainable = False
+            g_loss = self.model.train_on_batch(noise, valid_label)
             G_loss_list.append(g_loss)
             D_loss_list.append(d_loss[0])
             print ("%d [D loss: %f, acc.: %.2f%%] [G loss: %f]" % (epoch, d_loss[0], 100*d_loss[1], g_loss))
