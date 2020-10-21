@@ -126,6 +126,7 @@ code
 1. #### [No such file or directory](#error1)   
 2. #### [데이터 다운로드 시간이 너무 오래걸려요!](#error2)   
 3. #### [Pycharm으로 실행이 안돼요!](#error3)   
+4. #### [gan.py의 loss_graph가 안생겨요!](#error4)   
 
 ### error1   
 * 에러 내용 : "No such file or directory"   
@@ -178,3 +179,9 @@ cd 폴더 경로
 python 파일이름.py
 ```   
 ![IMAGE6](/ignore/conda3.JPG)   
+   
+### error4   
+* 에러 내용 : "gan.py의 loss_graph가 안생겨요!"   
+* 에러 원인 : plotLoss 함수 추가 이전 버전이 배포되면서 생긴 문제입니다.   
+* 해결 : 깃허브에서 code/GAN 내의 gan.py 파일을 다시 받아주세요.   
+
