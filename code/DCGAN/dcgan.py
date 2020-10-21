@@ -145,7 +145,7 @@ class DCGAN():
     def sample_images(self, epoch):
         r, c = 5, 5
         noise = np.random.normal(0, 1, (r * c, self.latent_dim))
-        gen_imgs = self.generator(noise,training=False)
+        gen_imgs = self.generator.predict(noise)
 
         # Rescale images 0 - 1
         gen_imgs = 0.5 * gen_imgs + 0.5
