@@ -92,7 +92,8 @@ class GAN():
         # Adversarial ground truths
         valid = np.ones((batch_size, 1))
         fake = np.zeros((batch_size, 1))
-
+        D_loss_list = []
+        G_loss_list = []
         for epoch in range(1,epochs+1):
 
             # ---------------------
@@ -123,11 +124,23 @@ class GAN():
 
             # 판별자 레이블 샘플을 유효한 것으로 지정
             g_loss = self.model.train_on_batch(noise, valid)
-
+            G_loss_list.append(g_loss)
+            D_loss_list.append(d_loss[0])
             print ("%d [D loss: %f, acc.: %.2f%%] [G loss: %f]" % (epoch, d_loss[0], 100*d_loss[1], g_loss))
 
             if epoch % sample_interval == 0:
                 self.sample_images(epoch)
+        self.plotLoss(G_loss_list, D_loss_list, epoch)
+
+    # 그래프를 생성하는 함수
+    def plotLoss(self, G_loss, D_loss, epoch):
+        plt.figure(figsize=(10, 8))
+        plt.plot(D_loss, label='Discriminitive loss')
+        plt.plot(G_loss, label='Generative loss')
+        plt.xlabel('BatchCount')
+        plt.ylabel('Loss')
+        plt.legend()
+        plt.savefig('loss_graph/gan_loss_epoch_%d.png' % epoch)
 
     # 이미지를 저장하는 함수
     def sample_images(self, epoch):
